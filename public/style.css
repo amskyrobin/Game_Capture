@@ -1,0 +1,50 @@
+
+@font-face {
+  font-family: 'Kenzo';
+  src: url('/public/Kenzo_Regular.otf');
+}
+
+/*layout nav bar*/
+
+#header {
+  background-color: ivory;
+  padding: 5px;
+}
+
+/*welcome page*/
+
+body {
+  background-color: #97D5E5
+}
+
+#main {
+  height: 700px;
+  width: 960px;
+}
+
+#main h1 {
+  font-family: 'Kenzo';
+  color: ivory;
+  font-size: 70px;
+  padding: 15px;
+}
+
+#main p {
+  color: #DFF2F7;
+  font-size: 24px;
+  font-family: Tahoma;
+}
+
+#bottom {
+  background-color: ivory;
+  padding: 10px;
+}
+
+#bottom p {
+  color: #F6B447;
+  font-size: 15px;
+}
+
+
+/*BDE4EE*/
+/*orange F6B447*/

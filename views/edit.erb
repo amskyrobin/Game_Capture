@@ -1,0 +1,20 @@
+<h1>Edit Game</h1>
+
+<form action='/games/<%= @game.id %>' method='post'>
+ <label>
+   Name:
+   <input type="text" name="name" value="<%=@game.name%>">
+ </label>
+
+ <label>
+  Stock Level:
+  <input type="text" name="stock_level" value="<%=@student.stock_level%>">
+</label>
+
+<label>
+  Quantity:
+  <input type="number" name="quantity" value="<%=@game.quantity%>">
+</label>
+
+
+</form>

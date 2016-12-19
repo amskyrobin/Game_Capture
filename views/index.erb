@@ -1,0 +1,12 @@
+<h1>Game Inventory</h1>
+
+<div id="index_container">
+  <% for game in @games  %>
+  <p>Name: <%= game.name %></p>
+  <p>Available quantity: <%= game.quantity %></p>
+  <p>Stock level: <%= game.stock_level%></p>
+  <a href="/games/<%=game.id%>">Game Information</a>
+  <hr>
+  <% end %>
+</div>
+

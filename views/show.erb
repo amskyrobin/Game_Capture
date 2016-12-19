@@ -1,0 +1,8 @@
+<h1>Game details:</h1>
+<p>Name: <%= @game.name%></p>
+<p>Stock level: <%= @game.stock_level%></p>
+<p>Quantity: <%= @game.quantity%></p>
+
+<form id="delete" action='/games/<%=@game.id%>/delete' method="post"><input type="submit" value="Delete Game"></form>
+
+<a id="edit_game" href="/games/<%=@game.id%>/edit">Edit Game</a>
