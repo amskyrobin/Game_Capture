@@ -1,4 +1,5 @@
 require_relative( '../db/sql_runner' )
+require('pry')
 
 class Game
 
@@ -27,7 +28,7 @@ def self.all
 end
 
 def self.find(id)
-  sql = "SELECT FROM games WHERE id = #{id};"
+  sql = "SELECT * FROM games WHERE id = #{id};"
   game = SqlRunner.run(sql)
   return Game.new(game.first)
 end 
@@ -47,5 +48,14 @@ def self.delete_all
   sql = "DELETE FROM games;"
   SqlRunner.run(sql)
 end
-  
+
+def publisher()
+  sql = "SELECT * FROM publishers WHERE id = #{@publisher_id};"
+  result = SqlRunner.run( sql ).first
+  # binding.pry
+  return Publisher.new( result )
+end
+
+
+
 end

@@ -7,7 +7,6 @@ class Publisher
   def initialize(details) 
     @id = details['id'].to_i
     @name = details['name']
-
   end
 
   def save
@@ -44,5 +43,6 @@ def self.delete_all
   sql = "DELETE FROM publishers;"
   SqlRunner.run(sql)
 end
+
 
 end

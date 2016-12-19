@@ -9,28 +9,27 @@ require_relative( './models/publisher' )
 #landing page
 
 get '/home' do
-erb(:welcome)
-  end
+  erb(:welcome)
+end
 
-#inventory page
+#shows all games
 get '/games' do 
   @games = Game.all
   erb(:index)
-  end
+end
 
 #form to add a new game
 
 get '/games/new' do
+  @publishers = Publisher.all
   erb(:new)
 end
 
 #show more info about specific game
 
 get '/games/:id' do 
-  search_id = params[:id]
-  @game = Game.find(search_id)
+  @game = Game.find(params[:id])
   erb(:show)
-
 end
 
 #create a game using params
