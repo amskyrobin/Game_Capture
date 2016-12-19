@@ -13,14 +13,20 @@
 }
 
 #header li a {
-  text-align: center;
   font-family: 'Kenzo';
-  font-size: 20px;
+  font-size: 22px;
+}
+
+#header ul li a {
+  float: right;
+  margin-left: 35px;
+  padding-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
 }
 
 #header li {
   display: inline;
-  text-decoration: none;
   margin-right: 25px;
 }
 
@@ -31,6 +37,7 @@ body {
   background-color: #97D5E5;
   padding: 0%;
   margin: 0%;
+  font-family: Tahoma;
 }
 
 #main {
@@ -44,6 +51,7 @@ body {
   font-size: 80px;
   padding: 15px;
   float: right;
+  padding-top: 30px;
 }
 
 #main .finalboss {
@@ -61,6 +69,22 @@ body {
   font-family: Tahoma;
 }
 
+#text1 p {
+  position: relative;
+  height: 40px;
+  width: 200px;
+  left: 480px;
+  bottom: 240px;
+}
+
+#text2 p {
+  position: relative;
+  height:40px;
+  width: 200px;
+  left: 480px;
+  bottom: 150px;
+}
+
 #bottom {
   background-color: ivory;
   padding: 10px;
@@ -74,3 +98,36 @@ body {
 
 /*BDE4EE*/
 /*orange F6B447*/
+
+
+/*index CSS*/
+
+h1 {
+  font-family: 'Kenzo';
+  color: ivory;
+  font-size: 50px;
+  padding-left: 20px;
+}
+
+#inventory {
+  padding-left: 20px;
+} 
+
+
+#inventory th {
+  font-family: 'Kenzo';
+  color: ivory;
+  font-size: 30px;
+  border-bottom: solid ivory;
+  border-top: solid #DFF2F7;
+  padding-top: 2px;
+}
+
+#inventory tr {
+  color: purple;
+  margin: 7px 10px 10px 10px;
+  font-size: 25px;
+}
+
+/*ADD A GAME CSS*/
+
