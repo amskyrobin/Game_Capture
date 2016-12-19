@@ -9,24 +9,50 @@
 #header {
   background-color: ivory;
   padding: 5px;
+  margin: 0%;
 }
+
+#header li a {
+  text-align: center;
+  font-family: 'Kenzo';
+  font-size: 20px;
+}
+
+#header li {
+  display: inline;
+  text-decoration: none;
+  margin-right: 25px;
+}
+
 
 /*welcome page*/
 
 body {
-  background-color: #97D5E5
+  background-color: #97D5E5;
+  padding: 0%;
+  margin: 0%;
 }
 
 #main {
-  height: 700px;
-  width: 960px;
+  height: 500px;
+  width: 800px;
 }
 
 #main h1 {
   font-family: 'Kenzo';
   color: ivory;
-  font-size: 70px;
+  font-size: 80px;
   padding: 15px;
+  float: right;
+}
+
+#main .finalboss {
+  width: 250px;
+  height:320px;
+  padding-top: 50px;
+  padding-left: 200px;
+  padding-right: 0px;
+  padding-bottom: 0px;
 }
 
 #main p {
