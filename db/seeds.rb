@@ -37,7 +37,6 @@ publisher5.save
 
 game1 = Game.new({
   'name' => 'TimeSplitters: Future Perfect',
-  'stock_level' => 'medium',
   'quantity' => 19,
   'publisher_id' => publisher1.id
 })
@@ -46,7 +45,6 @@ game1.save
 
 game2 = Game.new({
   'name' => 'Fallout 4',
-  'stock_level' => 'high',
   'quantity' => 31,
   'publisher_id' => publisher2.id 
   })
@@ -55,7 +53,6 @@ game2.save
 
 game3 = Game.new({
   'name' => 'Final Fantasy X',
-  'stock_level' => 'low',
   'quantity' => 4,
   'publisher_id' => publisher3.id
   })
@@ -64,7 +61,6 @@ game3.save
 
 game4 = Game.new({
   'name' => 'Resident Evil 4',
-  'stock_level' => 'medium',
   'quantity' => 18,
   'publisher_id' => publisher4.id
   })
@@ -73,7 +69,6 @@ game4.save
 
 game5 = Game.new({
   'name' => 'Tekken Tag Tournament',
-  'stock_level' => 'low',
   'quantity' => 2,
   'publisher_id' => publisher5.id
   })

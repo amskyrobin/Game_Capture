@@ -37,7 +37,7 @@ end
 post '/games' do 
   @game = Game.new(params)
   @game.save()
-  erb(:create)
+  redirect to("/games")
 end 
 
 #will actively delete a game
@@ -50,6 +50,7 @@ end
 #will provide  a form to edit a games info
 
 get '/games/:id/edit' do
+  @publishers = Publisher.all
   @game = Game.find(params[:id])
   erb(:edit)
 end

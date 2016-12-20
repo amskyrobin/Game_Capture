@@ -5,17 +5,23 @@
 <div id="form">
 <form action='/games' method='post'>
  <label>
-   Name:
+ <p>
+   Name
+ </p> 
    <input type="text" name="name">
  </label>
 
 <label>
-  Quantity:
+  <p>
+  Quantity
+  </p>
   <input type="number" name="quantity">
 </label>
 
 <label>
-      Existing Publisher:
+  <p>
+    Existing Publisher
+  </p>
 </label>
     <select name ="publisher_id">
     <% for publisher in @publishers %>
@@ -23,22 +29,16 @@
     <% end %>
     </select>
 
-<label>
-    New Publisher:
-    <input type="text" name="publisher">
-</label>
 
 </div>
 
-
-
+<div id="add_game">
   <input type="submit" value="Add game">
 
 </label>
 
 </form>
-
-<div id="bottom_add"></div>
+</div>
 
 <!-- <img src="/images/dogknight.png" class="dogknight"/> -->
 

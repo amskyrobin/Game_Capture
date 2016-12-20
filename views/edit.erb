@@ -1,20 +1,33 @@
-<h1>Edit Game</h1>
+<h1 id="edit_head">Edit Game</h1>
+
+<div id="edit_game">
 
 <form action='/games/<%= @game.id %>' method='post'>
  <label>
-   Name:
+    <p>
+   Name
+   </p>
    <input type="text" name="name" value="<%=@game.name%>">
  </label>
 
- <label>
-  Stock Level:
-  <input type="text" name="stock_level" value="<%=@game.stock_level%>">
-</label>
 
 <label>
-  Quantity:
+  <p>
+  Quantity
+  </p>
   <input type="number" name="quantity" value="<%=@game.quantity%>">
 </label>
 
+</label>
+    <select name ="publisher_id">
+    <% for publisher in @publishers %>
+      <option value="<%= publisher.id %>"><%= publisher.name %></option>
+    <% end %>
+    </select>
+<label>
 
+
+<input type="submit" value="Update Game">
 </form>
+
+</div>

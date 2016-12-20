@@ -4,19 +4,17 @@ require('pry')
 class Game
 
   attr_reader :id, :name, :quantity, :publisher_id
-  attr_accessor :stock_level
 
   def initialize(details)
     @id = details['id'].to_i 
     @name = details['name']
-    @stock_level = details['stock_level']
     @quantity = details['quantity'].to_i
     @publisher_id = details['publisher_id'].to_i
 
   end
 
 def save
- sql = "INSERT INTO games (name, stock_level, quantity, publisher_id) VALUES ('#{@name}', '#{@stock_level}', #{@quantity}, #{@publisher_id}) RETURNING *;"
+ sql = "INSERT INTO games (name, quantity, publisher_id) VALUES ('#{@name}', #{@quantity}, #{@publisher_id}) RETURNING *;"
  game_data = SqlRunner.run(sql)
  @id = game_data.first['id'].to_i
 end
@@ -35,8 +33,8 @@ def self.find(id)
 end 
 
 def self.update(details) 
-  sql = "UPDATE games SET name='#{ details['name'] }', stock_level='#{ details['stock_level'] }', quantity='#{ details['quantity'] }', publisher_id='#{ details['publisher_id'] }'
-      WHERE id='#{ details['id'] }'"
+  sql = "UPDATE games SET name='#{ details['name'] }', quantity='#{ details['quantity'] }', publisher_id='#{ details['publisher_id'] }'
+      WHERE id='#{ details['id'] }';"
       SqlRunner.run(sql)
 end 
 
@@ -58,23 +56,22 @@ def publisher()
 end
 
   def update()
-    sql = "UPDATE games SET (name, quantity, stock_level, publisher_id) = ('#{@name}', #{@quantity}, '#{@stock_level}', #{@publisher_id}) WHERE id = #{@id}"
+    sql = "UPDATE games SET (name, quantity, publisher_id) = ('#{@name}', #{@quantity}, #{@publisher_id}) WHERE id = #{@id}"
     SqlRunner.run(sql)
   end
 
-def quantity_to_word()
+def stock_level()
   medium = (15..29).to_a
   low = (1..14).to_a
   if @quantity > medium.last  
-    @stock_level = "high"
+    return "high"
   elsif medium.include?(@quantity)
-    @stock_level = "medium"
+    return "medium"
   elsif low.include?(@quantity)
-    @stock_level = "low"
+    return "low"
   else 
-    @stock_level = "out of stock" 
+    return "out of stock" 
   end
-  update()
 end
 
 def quantity
