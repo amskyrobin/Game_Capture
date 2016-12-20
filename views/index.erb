@@ -8,7 +8,8 @@
       <th>Name</th>
       <th>Quantity</th>
       <th>Stock Level</th>
-      <th>Publisher</th>      
+      <th>Publisher</th>
+      <th>Game Information</th>      
     </tr>
     <% for game in @games  %>
     <tr>
@@ -16,6 +17,7 @@
       <td><%= game.quantity %></td>
       <td><%= game.stock_level %></td>
       <td><%= game.publisher.name %></td>
+      <td><a href="/games/<%=game.id%>">Game Information</a></td>
     </tr>
     <% end%>
   </table>

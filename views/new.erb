@@ -1,20 +1,32 @@
-<h1>Add a game</h1>
+<h1 id="form_head">Add a game</h1>
 
+<div id="form">
 <form action='/games' method='post'>
  <label>
    Name:
    <input type="text" name="name">
  </label>
 
- <label>
-  Stock Level:
-  <input type="text" name="stock_level">
-</label>
-
 <label>
   Quantity:
   <input type="number" name="quantity">
 </label>
+
+<label>
+      Existing Publisher:
+</label>
+    <select name ="publisher_id">
+    <% for publisher in @publishers %>
+      <option value="<%= publisher.id %>"><%= publisher.name %></option>
+    <% end %>
+    </select>
+
+<label>
+    New Publisher:
+    <input type="text" name="publisher">
+</label>
+
+</div>
 
 
 
@@ -23,3 +35,9 @@
 </label>
 
 </form>
+
+<div id="bottom_add"></div>
+
+<!-- <img src="/images/dogknight.png" class="dogknight"/> -->
+
+

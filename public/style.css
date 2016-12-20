@@ -63,6 +63,7 @@ body {
   padding-bottom: 0px;
 }
 
+
 #main p {
   color: #DFF2F7;
   font-size: 24px;
@@ -129,5 +130,42 @@ h1 {
   font-size: 25px;
 }
 
-/*ADD A GAME CSS*/
+#inventory a {
+  text-decoration: none;
+  padding-right: 5px;
+  color: purple;
+  background-color: #BDE4EE;
+
+}
+
+/*GAME DETAILS CSS*/
+
+#gamedetails p {
+  font-family: Tahoma;
+  color: purple;
+  text-align: center;
+}
+
+#gamedetails h1 {
+  text-align: center;
+}
+
+/*
+ADD A GAME CSS*/
+
+div#form {
+  padding-bottom: 340px;
+  background-color: ivory;
+  height: 80px;
+  width: 300px;
+  position: relative;
+  left: 450px;
+}
+ 
+
+#bottom_add {
+  background-color: ivory;
+  padding: 100px;
+}
+
 

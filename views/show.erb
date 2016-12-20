@@ -1,9 +1,13 @@
-<h1>Game details:</h1>
+<div id="gamedetails">
+<h1>Game Details</h1>
 
+<div id="gamedetails">
 <p>Name: <%= @game.name%></p>
 <p>Stock level: <%= @game.stock_level%></p>
 <p>Quantity: <%= @game.quantity%></p>
-<p>Publisher <%= @game.publisher%></p>
+<p>Publisher <%= @game.publisher.name%></p>
+</div>
+
 
 <form id="delete" action='/games/<%=@game.id%>/delete' method="post"><input type="submit" value="Delete Game"></form>
 

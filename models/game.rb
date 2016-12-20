@@ -3,7 +3,8 @@ require('pry')
 
 class Game
 
-  attr_reader :id, :name, :stock_level, :quantity, :publisher_id
+  attr_reader :id, :name, :quantity, :publisher_id
+  attr_accessor :stock_level
 
   def initialize(details)
     @id = details['id'].to_i 
@@ -56,6 +57,32 @@ def publisher()
   return Publisher.new( result )
 end
 
+  def update()
+    sql = "UPDATE games SET (name, quantity, stock_level, publisher_id) = ('#{@name}', #{@quantity}, '#{@stock_level}', #{@publisher_id}) WHERE id = #{@id}"
+    SqlRunner.run(sql)
+  end
+
+def quantity_to_word()
+  medium = (15..29).to_a
+  low = (1..14).to_a
+  if @quantity > medium.last  
+    @stock_level = "high"
+  elsif medium.include?(@quantity)
+    @stock_level = "medium"
+  elsif low.include?(@quantity)
+    @stock_level = "low"
+  else 
+    @stock_level = "out of stock" 
+  end
+  update()
+end
+
+def quantity
+  sql = "SELECT * FROM games WHERE id = #{@id};"
+  result = SqlRunner.run(sql).first['quantity']
+  return result 
+end
 
 
 end
+
