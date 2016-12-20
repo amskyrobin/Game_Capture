@@ -150,22 +150,85 @@ h1 {
   text-align: center;
 }
 
+#gamedetails {
+  border: solid 5px #BDE4EE;
+  height: 300px;
+  width: 560px;
+  position: relative;
+  left: 390px;
+  top: 70px;
+}
+
+#delete {
+  position: relative;
+  left: 450px;
+  top: 100px;
+}
+
+#edit_game {
+  text-decoration: none;
+  font-family: 'Kenzo';
+  padding: 19px 40px;
+  font-size: 25px;
+  color: ivory;
+  background-color: #BDE4EE;
+  position: relative;
+  left: 690px;
+  top: 53px;
+}
+
 /*
 ADD A GAME CSS*/
 
 div#form {
-  padding-bottom: 340px;
+  padding-bottom: 300px;
   background-color: ivory;
-  height: 80px;
+  height: 70px;
   width: 300px;
   position: relative;
-  left: 450px;
+  left: 500px;
+  border: solid 5px #BDE4EE;
 }
  
+div#form_head {
+  text-align: center;
+}
 
-#bottom_add {
+div#form_head h1 {
+  font-size: 55px;
+}
+
+input[type=text] {
+  padding: 5px;
+  position: relative;
+  top: 5px;
+}
+
+input[type=number] {
+  padding: 5px;
+}
+
+#form label {
+  padding: 5px;
+  position: relative;
+  color : purple;
+  position: relative;
+  top: 30px;
+}
+
+input[type=submit] {
+  background-color: #BDE4EE;
+  border: none;
+  font-family: 'Kenzo';
+  padding: 20px 30px;
+  font-size: 25px;
+  color: ivory;
+}
+
+
+/*#bottom_add {
   background-color: ivory;
   padding: 100px;
-}
+}*/
 
 
