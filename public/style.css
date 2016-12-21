@@ -118,12 +118,20 @@ h1 {
   font-size: 25px;
 }
 
+tr:nth-child(even) {
+  background-color: white;
+  opacity: 0.5;
+}
+
+td:nth-last-child(1) {
+  background-color: #F6B447;
+  text-align: center;
+}
+
 #inventory a {
   text-decoration: none;
   padding-right: 5px;
   color: purple;
-  background-color: #BDE4EE;
-
 }
 
 /*GAME DETAILS CSS*/

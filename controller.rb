@@ -69,4 +69,18 @@ get '/publishers/new' do
   erb(:new_publisher)
 end
 
+#will push through the form and create a new publisher
+
+post '/publishers' do 
+  @publisher = Publisher.new(params)
+  @publisher.save()
+  redirect to("/publishers")
+end 
+
+#show all publishers 
+
+get '/publishers' do 
+  @publishers = Publisher.all
+  erb(:pub_index)
+end
 
