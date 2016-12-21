@@ -156,6 +156,8 @@ td:nth-last-child(1):hover {
 #gamedetails h1 {
   text-align: center;
   padding-right: 50px;
+  position: relative;
+  left:20px;
 }
 
 #gamedetails {
@@ -331,4 +333,9 @@ div#publisher_list {
 a#edit_game:hover {
   background-color: #F6B447;
 
+}
+
+tr {
+  color: purple;
+  font-size: 25px;
 }
