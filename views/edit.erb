@@ -1,8 +1,8 @@
 <h1 id="edit_head">Edit Game</h1>
 
-<div id="edit_game">
 
-<form action='/games/<%= @game.id %>' method='post'>
+
+<form action='/games/<%= @game.id %>' method='post' id="edit_form">
  <label>
     <p>
    Name
@@ -18,8 +18,11 @@
   <input type="number" name="quantity" value="<%=@game.quantity%>">
 </label>
 
-</label>
-    <select name ="publisher_id">
+</label id="annoying">
+<p>
+Publisher
+</p>
+    <select name ="publisher_id" id="choose_pub">
     <% for publisher in @publishers %>
       <option value="<%= publisher.id %>"><%= publisher.name %></option>
     <% end %>
@@ -27,7 +30,8 @@
 <label>
 
 
-<input type="submit" value="Update Game">
+<input type="submit" value="Update Game" id="update_game">
 </form>
 
-</div>
+<!-- </div>
+ -->

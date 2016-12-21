@@ -62,5 +62,11 @@ post '/games/:id' do
   redirect to("/games/#{params[:id]}")
 end
 
+# form to make new publisher
+
+get '/publishers/new' do
+  @publishers = Publisher.all
+  erb(:new_publisher)
+end
 
 

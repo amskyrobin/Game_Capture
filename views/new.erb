@@ -2,8 +2,8 @@
 <h1>Add a game</h1>
 </div>
 
-<div id="form">
-<form action='/games' method='post'>
+
+<form action='/games' method='post' id ="form_add">
  <label>
  <p>
    Name
@@ -23,14 +23,13 @@
     Existing Publisher
   </p>
 </label>
-    <select name ="publisher_id">
+    <select name ="publisher_id" id="pub_label">
     <% for publisher in @publishers %>
       <option value="<%= publisher.id %>"><%= publisher.name %></option>
     <% end %>
     </select>
 
 
-</div>
 
 <div id="add_game">
   <input type="submit" value="Add game">

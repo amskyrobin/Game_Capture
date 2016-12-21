@@ -15,6 +15,7 @@
 #header li a {
   font-family: 'Kenzo';
   font-size: 22px;
+  color: purple;
 }
 
 #header ul li a {
@@ -29,14 +30,6 @@
   display: inline;
   margin-right: 25px;
 }
-
-/*WELCOME PAGE 2
-#main img .dogknight {
-  width: 250px;
-  height: 320px;  
-} */
-
-
 
 body {
   background-color: #97D5E5;
@@ -176,19 +169,23 @@ h1 {
 /*
 ADD A GAME CSS*/
 
-div#form {
-  padding-bottom: 300px;
+#form_add {
+  /*padding-bottom: 300px;*/
   background-color: #97D5E5;
-  height: 55px;
+  height: 400px;
   width: 300px;
   position: relative;
-  left: 523px;
+  left: 530px;
   border: solid 5px #BDE4EE;
+  font-size: 22px;
+  color: purple;
 }
 
 div#form_head h1 {
   font-size: 55px;
   text-align: center;
+  position: relative;
+  top:10px;
 }
 
 input[type=text] {
@@ -204,6 +201,12 @@ select {
   left: 20px;
   top: 20px;
   width: 200px;
+}
+
+select#pub_label {
+  position: relative;
+  left: 20px;
+  top: 20px;
 }
 
 input[type=number] {
@@ -240,20 +243,50 @@ label p {
 
 #add_game {
   position: relative;
-  left: 600px;
-  top: 30px;
+  left: 75px;
+  top: 80px;
 }
 
 /*EDIT GAME CSS*/
 
-div#edit_game {
+#edit_game { /*THE BUTTON*/
+  text-decoration: none;
+  font-family: 'Kenzo';
+  padding: 19px 40px;
+  font-size: 25px;
+  color: ivory;
+  background-color: #BDE4EE;
   position: relative;
-  left: 450px;
+  left: 690px;
+  top: 55px;
+}
+
+#edit_form {
   height: 400px;
   width: 400px;
-  background-color: #BDE4EE;  
+  border: 5px solid #BDE4EE;
+  position: relative;
+  left:470px;
+  color: purple;
+  font-family: 'Kenzo';
+  font-size: 25px;
+  bottom: 20px;
+}
+
+#edit_form p {
+  position: relative;
+  left: 25px;
 }
 
 h1#edit_head {
   text-align: center;
+  padding-top: 30px;
 }
+
+#update_game {
+  position: relative;
+  top: 100px;
+  right: 100px;
+}
+
+
