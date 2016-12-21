@@ -49,7 +49,7 @@ body {
   font-size: 185px;
   padding: 15px;
   position: relative;
-  left: 550px;
+  left: 515px;
   bottom: 495px;
 }
 
@@ -95,7 +95,7 @@ h1 {
   font-family: 'Kenzo';
   color: ivory;
   font-size: 50px;
-  padding-left: 90px;
+ text-align: center;
 }
 
 #inventory table {
@@ -178,23 +178,17 @@ td:nth-last-child(1) {
 ADD A GAME CSS*/
 
 #form_add {
-  /*padding-bottom: 300px;*/
   background-color: #97D5E5;
-  height: 400px;
+  height: 520px;
   width: 300px;
   position: relative;
-  left: 530px;
+  left: 485px;
   border: solid 5px #BDE4EE;
   font-size: 22px;
   color: purple;
+  bottom: 20px;
 }
 
-div#form_head h1 {
-  font-size: 55px;
-  text-align: center;
-  position: relative;
-  top:10px;
-}
 
 input[type=text] {
   padding: 5px;
@@ -270,7 +264,7 @@ label p {
 }
 
 #edit_form {
-  height: 400px;
+  height: 510px;
   width: 400px;
   border: 5px solid #BDE4EE;
   position: relative;
@@ -297,4 +291,8 @@ h1#edit_head {
   right: 100px;
 }
 
-
+div#add_publisher {
+  position: relative;
+  top: 100px;
+  left: 55px;
+}
