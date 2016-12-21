@@ -18,7 +18,7 @@
   <input type="number" name="quantity" value="<%=@game.quantity%>">
 </label>
 
-</label id="annoying">
+<label>
 <p>
 Publisher
 </p>
@@ -27,11 +27,13 @@ Publisher
       <option value="<%= publisher.id %>"><%= publisher.name %></option>
     <% end %>
     </select>
-<label>
+</label>
 
 
 <input type="submit" value="Update Game" id="update_game">
+
 </form>
+
 
 <!-- </div>
  -->

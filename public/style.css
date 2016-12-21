@@ -12,19 +12,27 @@
   margin: 0%;
 }
 
+
 #header li a {
   font-family: 'Kenzo';
   font-size: 22px;
   color: purple;
 }
 
+
 #header ul li a {
   float: right;
-  margin-left: 35px;
-  padding-left: 10px;
-  margin-right: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 12px;
   text-decoration: none;
+  position: relative;
+  bottom: 13px;
 }
+
+#header ul li a:hover {
+  background-color: #F6B447
+} 
 
 #header li {
   display: inline;
@@ -127,6 +135,9 @@ td:nth-last-child(1) {
   background-color: #F6B447;
   text-align: center;
 }
+td:nth-last-child(1):hover {
+  background-color: ivory;
+}
 
 #inventory a {
   text-decoration: none;
@@ -201,7 +212,6 @@ input[type=text] {
 select {
   position: relative;
   left: 20px;
-  top: 20px;
   width: 200px;
 }
 
@@ -234,6 +244,10 @@ input[type=submit]{
   font-size: 25px;
   color: ivory;
   border: 2px black;
+}
+
+input[type=submit]:hover {
+  background-color: #F6B447;
 }
 
 label p {
@@ -287,12 +301,34 @@ h1#edit_head {
 
 #update_game {
   position: relative;
-  top: 100px;
+  top: 90px;
   right: 100px;
 }
+
+select#choose_pub {
+  position: relative;
+  bottom: 30px;
+}
+
+/*PUBLISHER INDEX*/
 
 div#add_publisher {
   position: relative;
   top: 100px;
   left: 55px;
+}
+
+
+div#publisher_list {
+  position: relative;
+  padding-left: 180px;
+}
+
+div#publisher_list {
+  font-family: 'Kenzo'
+}
+
+a#edit_game:hover {
+  background-color: #F6B447;
+
 }

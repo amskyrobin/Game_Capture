@@ -1,5 +1,16 @@
 <h1>Publisher Index</h1>
 
-<% for publisher in @publishers %>
+<div id="publisher_list">
+  <table style="width:80%">
+  <tr>
+  <th>A to Z</th>
+  </tr>
+  <tr>
+    <% for publisher in @publishers %>
+  </tr>
+  <td>
   <%= publisher.name %>
+  </td>
 <% end %>
+</table>
+</div>
